@@ -1,0 +1,31 @@
+# Exercise 1
+sudo apt-get install cmatrix
+cmatrix
+ctrl+c
+
+# Exercise 2
+sudo apt-get install fortune
+fortune > fortune.txt
+
+# Exercise 3
+wc -w fortune.txt 
+
+# Exercise 4
+sudo apt-get install sl
+sl
+sl -f
+
+# Exercise 5
+sudo apt-get install cowsay
+cowsay
+cat fortune.txt | cowsay
+
+# Exercise 6
+factor 42
+
+# Exercise 7
+cat fortune.txt | rev
+
+
+# Exercise 8
+telnet towel.blinkenlights.nl

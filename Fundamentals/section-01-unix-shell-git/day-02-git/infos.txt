@@ -1,0 +1,5 @@
+- Use git init to start a version structure
+- Use git checkout -b branchName to create a new branch
+- Make the changes in the files 
+- Use git add . and then use git commit -m "whatyoudid"
+- Use git push to send the changes to pull requests

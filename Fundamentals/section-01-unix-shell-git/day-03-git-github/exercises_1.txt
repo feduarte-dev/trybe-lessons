@@ -1,0 +1,5 @@
+# Exercise 1
+git checkout -b day3
+
+# Exercise 2
+Check 

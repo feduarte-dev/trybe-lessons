@@ -66,18 +66,21 @@ const countries = [
   },
 ];
 
+// 1 - Calcule a quantidade total da população de todos os países.
 const getPopulation = () => {
   const pop = [];
   countries.forEach((country) => pop.push(country.population));
   return pop.reduce((popTotal, popAtual) => popTotal + popAtual);
 };
 
+// 2 - Calcule a área total de todos os países.
 const getTotalArea = () => {
   const area = [];
   countries.forEach((country) => area.push(country.area));
   return area.reduce((areaTotal, areaAtual) => areaTotal + areaAtual);
 };
 
+// 3 - Encontre o país com o maior nome.
 const longestName = () => {
   const namesLength = [];
   countries.map((country) => {
@@ -89,6 +92,7 @@ const longestName = () => {
   return countries.find((country) => country.name.length === biggestName);
 };
 
+// 4 - Retorne a quantidade de vezes que a letra a maiúscula ou minúscula aparece no array de nomes.
 const names = [
   'Aanemarie',
   'Adervandes',
@@ -100,7 +104,6 @@ const names = [
   'Adieidy',
   'Alarucha',
 ];
-const expectedResult = 20;
 
 const countA = () => {
   const arr = [];
@@ -119,7 +122,7 @@ const countA = () => {
   return count;
 };
 
-// O index 0 do array `students` equivale ao index 0 do array `grades`
+// 5 - Crie um array de objetos e calcule a média de notas. Utilize as constantes students e grades para criar um array de objetos e calcule a média da nota das pessoas estudantes
 const students = ['Pedro Henrique', 'Miguel', 'Maria Clara'];
 const grades = [
   [9, 8, 10, 7, 5],
@@ -140,9 +143,3 @@ const studentAverage = () => {
 };
 
 console.log(studentAverage());
-
-// const expectedResult = [
-//   { name: 'Pedro Henrique', average: 7.8 },
-//   { name: 'Miguel', average: 9.2 },
-//   { name: 'Maria Clara', average: 8.8 },
-// ];

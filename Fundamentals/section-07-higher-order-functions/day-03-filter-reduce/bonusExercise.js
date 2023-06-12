@@ -1,11 +1,10 @@
-// Requisito 1
+// 1 - Dada uma matriz, transforme em um array.
 const arrays = [['1', '2', '3'], [true], [4, 5, 6]];
 
 const flatten = () => arrays.reduce((total, atual) => total.concat(atual));
 
 // console.log(flatten());
 
-// Requisito 2
 const books = [
   {
     id: 1,
@@ -69,9 +68,7 @@ const books = [
   },
 ];
 
-const expectedResult =
-  'George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.';
-
+// 2 - Crie uma string com os nomes de todas as pessoas autoras.
 const reduceNames = () =>
   books.reduce(
     (acc, curr, index) =>
@@ -83,8 +80,7 @@ const reduceNames = () =>
 
 console.log(reduceNames());
 
-// const expectedResult = 43;
-
+// 3 - Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
 const averageAge = () => {
   let authorAges = [];
   books.map((book) => {
@@ -93,8 +89,7 @@ const averageAge = () => {
   return authorAges.reduce((acc, curr) => acc + curr) / 6;
 };
 
-// console.log(averageAge());
-
+// 4 - Encontre o livro com o maior nome.
 const longestNamedBook = () =>
   books.reduce((acc, curr) =>
     acc.name.length > curr.name.length ? acc : curr

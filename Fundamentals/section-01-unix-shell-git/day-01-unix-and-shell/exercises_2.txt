@@ -1,0 +1,39 @@
+# Exercise 1
+cat countries.txt
+
+# Exercise 2
+less countries.txt
+
+# Exercise 3
+less countries.txt
+/Zambia
+
+# Exercise 4
+grep Brazil countries.txt
+
+# Exercise 5
+grep -i brazil countries.txt
+
+# Exercise 6
+grep -v fox phrases
+
+# Exercise 7
+wc -w phrases.txt
+
+# Exercise 8
+wc -l phrases.txt
+
+# Exercise 9
+touch empty.tbt empty.pdf
+
+# Exercise 10
+ls
+
+# Exercise 11
+ls *.txt
+
+# Exercise 12
+ls *.txt *.tbt
+
+# Exercise 13
+man ls

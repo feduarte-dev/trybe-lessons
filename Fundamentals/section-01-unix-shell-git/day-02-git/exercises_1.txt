@@ -1,0 +1,42 @@
+# Exercise 1
+git checkout main
+git checkout -b update-readme
+
+# Exercise 2
+touch infos.txt
+
+# Exercise 3
+git add .
+git commit -m "infos.txt added"
+
+# Exercise 4
+cat > infos.txt
+Felipe Duarte
+
+# Exercise 5
+git add .
+git commit -m "added name in infos.txt"
+
+# Exercise 6
+git checkout -b add-infos
+
+# Exercise 7
+cat >> infos.txt
+- Use git init to start a version structure;
+- Use git checkout -b branchName to create a new branch;
+- Make the changes in the files ;
+- Use git add . and then use git commit -m "whatyoudid";
+- Use git push to send the changes to pull requests;
+
+# Exercise 8
+git add .
+git commit -m "updated infos.txt"
+
+# Exercise 9
+git checkout update-readme
+git merge
+
+# Exercise 10
+git checkout main
+git merge
+

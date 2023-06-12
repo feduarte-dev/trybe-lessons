@@ -1,0 +1,54 @@
+# Exercise 1
+mkdir unix_tests_skills
+
+# Exercise 2
+touch skills2.txt
+cat > skills2.txt 
+Internet 
+Unix
+Bash
+
+# Exercise 3
+cat >> skills2.txt 
+Git
+Github
+Html
+CSS
+Javascript
+sort skills2.txt
+
+# Exercise 4
+wc -l skills2.txt
+
+# Exercise 5
+sort skills2.txt | head -3 > top_skills.txt
+
+#Exercise 6
+touch phrases2.txt
+cat > phrases2.txt 
+Essa é uma frase da minha escolha
+Esta é outra frase
+Aqui há uma ultima frase
+
+#Exercise 7
+grep br phrases2.txt | wc -l
+
+# Exercise 8
+grep -v br phrases2.txt | wc -l
+
+# Exercise 9
+cat >> phrases2.txt 
+Itália
+Marrocos
+
+# Exercise 10
+cd ..
+cd unix_test_search/
+mv countries.txt ../unix_tests_skills/
+cd ..
+cd unix_tests_skills/
+cat phrases2.txt countries.txt > bunch_of_things.txt
+
+# Exercise 11
+sort bunch_of_things.txt 
+

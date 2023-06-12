@@ -23,7 +23,7 @@
 ##### Section 4: JavaScript - DOM, Events & Web Storage :heavy_check_mark:
 - [x] 4.1 - DOM and selectors
 - [x] 4.2 - Using elements
-- [x] 4.3 - Eventss
+- [x] 4.3 - Events 
 - [x] 4.4 - Web Storage
 - [x] 4.5 - Project - Pixels Art
 - [x] 4.6 - Project - Bonus Projects

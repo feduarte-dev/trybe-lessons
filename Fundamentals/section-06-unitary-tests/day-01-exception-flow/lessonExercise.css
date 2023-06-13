@@ -2,7 +2,7 @@
   margin: 0;
 }
 
-body { 
+body {
   width: 80%;
   background-color: #065220;
   color: #ffffff;
@@ -10,7 +10,9 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
-h2, input, button {
+h2,
+input,
+button {
   margin-bottom: 20px;
 }
 

@@ -23,7 +23,7 @@ button.addEventListener('click', () => {
 const showPromo = (name, number) => {
   const firstText = document.querySelector('#text-initial');
   const secondText = document.querySelector('#text-final');
-  
+
   try {
     checkName(name);
     checkNumber(parseInt(number));
@@ -33,13 +33,13 @@ const showPromo = (name, number) => {
     firstText.innerHTML = `Boas-vindas, ${name}!`;
     secondText.innerHTML = `A promoção do dia é: 
       ${productObject.product} no valor de R$ ${productObject.price}`;
-  } catch(err) {
+  } catch (err) {
     secondText.innerHTML = err.message;
   } finally {
-  document.querySelector('#name-id').value = "";
-  document.querySelector('#number-id').value = "";
+    document.querySelector('#name-id').value = '';
+    document.querySelector('#number-id').value = '';
   }
-}
+};
 const checkName = (name) => {
   let letters = /[aA-zZ]+/;
 
@@ -63,6 +63,7 @@ const checkPromo = (number) => {
   }
 };
 
+// Crie a função checkValidRange, que deverá ser responsável por verificar se o valor inserido no input de número está no intervalo de 1 a 10.
 const checkValidRange = (number) => {
   if (number < 1 || number > 10) {
     throw new Error(
@@ -71,7 +72,8 @@ const checkValidRange = (number) => {
   }
 };
 
-// Exercício
+// Implemente uma lógica que verifique a média da pessoa estudante. Para isso, considere as seguintes informações:
+// Escreva uma função que receba, como parâmetro, 4 valores do tipo number. Caso o valor recebido como parâmetro não seja do tipo number, lance uma exceção.
 const mediaNotas = (nota1, nota2, nota3, nota4) => {
   try {
     validaNota(nota1, nota2, nota3, nota4);

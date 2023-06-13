@@ -1,3 +1,4 @@
+// Implemente a função hydrate a partir dos testes a seguir. É importante nunca alterar os testes ou as variáveis já escritas no código.
 const hydrate = (string) => {
   let array = string.split('');
   let arrayNumbers = [];

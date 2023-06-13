@@ -1,3 +1,4 @@
+// Implemente a função techList a partir dos testes a seguir. É importante nunca alterar os testes ou as variáveis já escritas no código.
 const techList = (listaTecnologia, string) => {
   if (listaTecnologia.length === 0) {
     return `Vazio!`;

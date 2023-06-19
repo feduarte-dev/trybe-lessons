@@ -14,6 +14,7 @@ p {
   padding: 20px;
 }
 
+/* Crie um layout para telas pequenas */
 @media screen and (max-width: 600px) {
   body {
     background-color: lightcoral;
@@ -28,6 +29,7 @@ p {
     line-height: 1.5em;
   }
 }
+/* Crie um layout para telas médias */
 @media screen and (min-width: 600px) {
   body {
      background-color: lightblue;
@@ -37,6 +39,7 @@ p {
      flex-wrap: wrap;
    }
  }
+ /* Crie um layout para telas grandes */
  @media screen and (min-width: 1000px) {
   body {
     background-color: lightgreen;

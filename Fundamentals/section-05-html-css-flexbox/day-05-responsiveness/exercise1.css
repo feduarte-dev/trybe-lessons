@@ -81,6 +81,8 @@ body {
   height: 1%;
 }
 
+/* Os elementos id header, navigation e footer devem desaparecer.
+O elemento id='aside' deve ser mostrado abaixo do conteúdo principal. */
 @media print {
   #header,
   #navigation,
@@ -92,6 +94,10 @@ body {
   }
 }
 
+/* O elemento id='aside' deve desaparecer.
+As imagens não devem exceder a largura da tela.
+Os itens dentro do elemento navigation devem aparecer cada um em sua própria linha.
+O elemento id header deve ser fixo, de forma que fique aparecendo sempre no topo da tela, mesmo após a pessoa usuária rolar a página. */
 @media screen and (max-width: 450px) {
   #aside {
     display: none;

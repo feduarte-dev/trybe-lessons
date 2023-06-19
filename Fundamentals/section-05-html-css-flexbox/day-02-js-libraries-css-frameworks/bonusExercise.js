@@ -9,6 +9,10 @@ function enableSubmit() {
   submitBtn.disabled = !agreement.checked;
 }
 
+// No exercício bônus, você continuará usando o fomulário do TrybeTravel, mas que tal adicionar outras bibliotecas para deixar a página ainda mais legal.
+
+// Para o JavaScript, existem diferentes bibliotecas de validação para os campos de um formulário. Utilize a sugestão abaixo para substituir as validações que você fez manualmente:
+
 const validate = new JustValidate('#main-form', {
   errorFieldCssClass: 'is-invalid',
   errorFieldStyle: {

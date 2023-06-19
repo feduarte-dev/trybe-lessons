@@ -10,10 +10,13 @@ body {
 }
 
 .header-container {
-  background-color: #5C687C;
+  background-color: #5c687c;
   display: flex;
 }
 
+/* Adicione uma propriedade flex-basis aos containers:
+Do logotipo com o tamanho de 268px;
+Do container do menu com o tamanho de 500px. */
 .logo-container {
   display: flex;
   justify-content: center;
@@ -21,6 +24,7 @@ body {
   order: -1;
 }
 
+/* Utilize a propriedade align-self no elemento correto. */
 .menu-container {
   display: flex;
   flex-basis: 500px;
@@ -28,6 +32,7 @@ body {
   align-self: center;
 }
 
+/* Adicione uma propriedade Flexbox que faça o container do menu crescer, quando houver espaço disponível. */
 .menu-container ul {
   display: flex;
   justify-content: space-around;
@@ -46,6 +51,7 @@ body {
   flex-wrap: wrap;
 }
 
+/* Adicione uma propriedade ao seu container de filmes para que ele tenha uma base de 700px. Também adicione para os elementos filhos do seu card uma base de 16%. Deve ficar similar à imagem abaixo: */
 .movie-container {
   display: flex;
   flex-direction: column;
@@ -58,16 +64,17 @@ body {
   text-align: center;
 }
 
+/* No container de filmes aplique uma propriedade para expandi-lo, essa propriedade deve ter o valor 10. Deve ficar similar à imagem abaixo: */
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  
 }
 
+/* faça com que suas div do container de filmes ocupe todo o espaço em branco. */
 .card-container div {
   align-items: center;
-  background-color: #5C687C;
+  background-color: #5c687c;
   border: black solid 1px;
   display: flex;
   height: 150px;
@@ -78,6 +85,7 @@ body {
   flex-grow: 1;
 }
 
+/* Aplique no seu container aside uma base de 350px. */
 .aside-container {
   display: flex;
   flex-direction: column;
@@ -87,7 +95,9 @@ body {
   align-self: center;
 }
 
-.aside-container h3, h4 {
+/* Nos elemento aside, centralize e expanda seu conteúdo. Seu aside deve apresentar o seguinte comportamento: */
+.aside-container h3,
+h4 {
   margin-bottom: 10px;
   text-align: center;
 }

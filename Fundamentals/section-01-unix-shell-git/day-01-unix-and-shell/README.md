@@ -1,4 +1,4 @@
-### Exercise 1 - Creating files and directories
+#### Exercise 1 - Creating files and directories
 
 1- Using the terminal, create a directory called unix_tests and navigate to it.
 
@@ -32,7 +32,7 @@
 
 16- Delete all files ending in .txt.
 
-### Exercises 2 - Manipulating and searching
+#### Exercises 2 - Manipulating and searching
 
 1- Show the entire contents of the countries.txt file on the screen.
 
@@ -60,7 +60,7 @@
 
 13- Access the manual for the ls command.
 
-### Exercises 3 - Input and Output
+#### Exercises 3 - Input and Output
 
 1- Create the unix_tests_skills folder and navigate to it.
 
@@ -84,7 +84,7 @@
 
 11- Sort the bunch_of_things.txt file.
 
-### Exercises 4 - The terminal awaking
+#### Exercises 4 - The terminal awaking
 
 1- If you use Linux, open the terminal and run the command sudo apt-get install cmatrix. Then run the command cmatrix. Hit ctrl+c to go back to the terminal.
 

@@ -38,7 +38,7 @@ let lesson3 = {
 //-------------------------------//
 
 // function objSize(obj) {
-// return Object.keys(obj).length  
+// return Object.keys(obj).length
 // }
 
 // console.log(objSize(lesson1));
@@ -53,24 +53,25 @@ let lesson3 = {
 
 //-------------------------------//
 
-let allLessons = Object.assign({}, { 
-  lesson1: lesson1, 
-  lesson2: lesson2, 
-  lesson3: lesson3, 
-});
+let allLessons = Object.assign(
+  {},
+  {
+    lesson1: lesson1,
+    lesson2: lesson2,
+    lesson3: lesson3,
+  }
+);
 
 // console.log(allLessons);
 
 //-------------------------------//
 let key = '0';
 for (key in allLessons) {
- let value = '0';
-for (value in key) {
-  console.log(Object.values(key))
+  let value = '0';
+  for (value in key) {
+    console.log(Object.values(key));
+  }
 }
-}
-
-
 
 // function allStudents(obj) {
 //   let students1 = Object.values(lesson1.numeroEstudantes)

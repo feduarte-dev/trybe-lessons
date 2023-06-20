@@ -15,9 +15,13 @@ let student2 = {
   git: 'Bom', // chave adicionada
 };
 
-for (let index in student1) {console.log(index, ' Nível: ', student1[index])}
+for (let index in student1) {
+  console.log(index, ' Nível: ', student1[index]);
+}
 
-for (let index in student2) {console.log(index, ' Nível: ', student2[index])}
+for (let index in student2) {
+  console.log(index, ' Nível: ', student2[index]);
+}
 
 // function listSkills(student) {
 //   let arrayOfSkills = Object.keys(student);

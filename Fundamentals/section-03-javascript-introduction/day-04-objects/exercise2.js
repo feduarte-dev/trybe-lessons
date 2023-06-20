@@ -38,9 +38,7 @@
 //   }
 // }
 
-
 //Acesse as chaves nome, sobrenome e titulo – esta encontra-se dentro da chave livrosFavoritos – e faça um console.log no seguinte formato: “O livro favorito de Julia Pessoa se chama ‘O Pior Dia de Todos’”.
-
 let leitor = {
   nome: 'Julia',
   sobrenome: 'Pessoa',
@@ -54,24 +52,29 @@ let leitor = {
   ],
 };
 
-console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama ' + leitor.livrosFavoritos[0]['titulo']);
+console.log(
+  'O livro favorito de ' +
+    leitor.nome +
+    ' ' +
+    leitor.sobrenome +
+    ' se chama ' +
+    leitor.livrosFavoritos[0]['titulo']
+);
 
 // Adicione um novo livro favorito na chave livrosFavoritos, que é um array. Atribua a essa chave um objeto que contenha as seguintes informações:
-
 let novoLivro = {
   titulo: 'Harry Potter e o Prisioneiro de Azkaban',
   autor: 'JK Rowling',
   editora: 'Rocco',
-}
+};
 leitor.livrosFavoritos.push(novoLivro);
-console.log(leitor)
+console.log(leitor);
 
 //Acesse as chaves nome e livrosFavoritos e faça um console.log no seguinte formato: “Julia tem {quantidade} livros favoritos”, em que “{quantidade}” corresponde à quantidade de livros favoritos e é um número gerado automaticamente por seu código.
-
-
-console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos')
+console.log(
+  leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos'
+);
 
 for (let index = 0; index < array.length; index++) {
   const element = array[index];
-  
 }

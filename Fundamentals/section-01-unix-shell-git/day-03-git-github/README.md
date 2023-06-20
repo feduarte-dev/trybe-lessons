@@ -1,4 +1,4 @@
-### Exercises
+#### Exercises
 01- Create a new branch;
 
 02 - Organize your folders according to the Assignment Portfolio instructions. In this way, you will create the structure of directories that will be used throughout the course to store your exercises.

@@ -1,3 +1,12 @@
+/* Style the divs so that when hovering over them, they gain a border.
+
+Make each div have its own background color.
+
+Style each of the h3 tags however you see fit (color, size, style, and family).
+
+Make the third div bigger than the others.
+
+Leave the odd h3 tags with the text in italics. */
 div:hover {
   border: 1px solid black;
 }

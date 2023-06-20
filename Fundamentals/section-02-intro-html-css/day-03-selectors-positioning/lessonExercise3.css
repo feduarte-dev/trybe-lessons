@@ -1,0 +1,23 @@
+/* The text of the 'h1' and 'p' tags are centered.
+The background color of your list changes when the cursor is over the item.
+The item's font changes when it is clicked.
+Add an unordered list of at least 3 features you like.
+
+In the 'style.css', add the property 'list-style: none' for both lists. */
+h1,
+p {
+  text-align: center;
+}
+
+li:hover {
+  background-color: rgb(206, 119, 119);
+}
+
+li:active {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}

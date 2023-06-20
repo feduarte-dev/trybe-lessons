@@ -1,3 +1,10 @@
+/* Set Mario above the Goomba.
+
+Set Bowser to the right of the Goomba.
+
+Set the balloon so that it becomes Bowser's speech.
+
+Set the p-tag text so that it is inside the speech bubble. */
 .super-mario {
   width: 200px;
   position: absolute;

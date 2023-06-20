@@ -2,7 +2,7 @@
 
 const myList = [5, 2, 3];
 
-// escreva swap abaixo
+// escreva o swap abaixo
 
 const swap = (array) => {const [primeiro, segundo, terceiro] = array; return array = [terceiro, segundo, primeiro]}
 // const swap = ([a, b, c]) => [c, b, a]; << Gabarito

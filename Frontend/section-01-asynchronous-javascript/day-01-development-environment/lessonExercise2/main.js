@@ -11,7 +11,7 @@ button.addEventListener('click', (event) => {
   // Vamos usar o preventDefault() para evitar que, ao
   // clicar no botão, ele recarregue a página
   event.preventDefault();
-
+  const isUUID = 4;
   // Aqui, criamos um objeto cujas chaves são os tipos a
   // serem validados. Por exemplo, a chave CPF valida se
   // o campoDeTexto.value é um CPF.
@@ -19,7 +19,7 @@ button.addEventListener('click', (event) => {
     cpf: validator.isTaxID(campoDeTexto.value, 'pt-BR'),
     hexColor: validator.isHexColor(campoDeTexto.value),
     email: validator.isEmail(campoDeTexto.value),
-    uuid: validator.isUUID(campoDeTexto.value),
+    uuid: validator.isUUID(campoDeTexto.value, isUUID),
     url: validator.isURL(campoDeTexto.value),
   };
 

@@ -1,39 +1,26 @@
-const randomDog = document.querySelector('.randomDog');
-const randomCat = document.querySelector('.randomCat');
-const randomPet = document.querySelector('.randomPet');
-const petImg = document.querySelector('.petImg');
+const randomDigi = document.querySelector('.randomDigi');
+const digiLevel = document.querySelector('.digiLevel');
+const digiImg = document.querySelector('.digiImg');
+const digiName = document.querySelector('.digiName');
 
-const dogRandom = () => {
-    const DOG_API = 'https://dog.ceo/api/breeds/image/random';
-    fetch(DOG_API)
-      .then((response) => response.json())
-      .then((data) => {
-        petImg.src = data.message;
-      });
-  };
-  
-  const catRandom = () => {
-    const CAT_API = 'https://api.thecatapi.com/v1/images/search';
-    fetch(CAT_API)
-      .then((response) => response.json())
-      .then((data) => {
-        petImg.src = data[0].url;
-      });
-  };
-
-randomDog.addEventListener('click', (event) => {
+randomDigi.addEventListener('click', (event) => {
   event.preventDefault();
-  dogRandom();
+  digiRandom();
 });
 
-randomCat.addEventListener('click', (event) => {
-  event.preventDefault();
-  catRandom();
-});
+const randomId = () => {
+  const lastID = 208;
+  return Math.floor(Math.random() * lastID) + 1;
+};
 
-randomPet.addEventListener('click', (event) => {
-  event.preventDefault();
-  Promise.race([dogRandom(), catRandom()]).then((result) => {
-    petImg.src = result;
-  });
-});
+const digiRandom = () => {
+  const digimon = randomId();
+  const DIGI_API = `https://digimon-api.vercel.app/api/digimon`;
+  fetch(DIGI_API)
+    .then((response) => response.json())
+    .then((data) => {
+      digiImg.src = data[digimon].img;
+      digiName.innerHTML = `Nome: ${data[digimon].name}`;
+      digiLevel.innerHTML = `Nível: ${data[digimon].level}`;
+    });
+};

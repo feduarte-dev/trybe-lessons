@@ -1,0 +1,36 @@
+░▒▓ ~ ▓▒░ docker pull debian:stable-slim                                                                                                                                                                                                                              ░▒▓ ✔  12:57:18 ▓▒░
+stable-slim: Pulling from library/debian
+Digest: sha256:149e944a6f4855f9738baf4ddd79fc2f218e6440218223fa9017aebc1e45f1f5
+Status: Image is up to date for debian:stable-slim
+docker.io/library/debian:stable-slim
+
+░▒▓ ~ ▓▒░ docker container run -it debian:stable-slim                                                                                                                                                                                                                 ░▒▓ ✔  12:57:23 ▓▒░
+root@7bb4cdc7834e:/# cat /etc/*-release
+PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+NAME="Debian GNU/Linux"
+VERSION_ID="12"
+VERSION="12 (bookworm)"
+VERSION_CODENAME=bookworm
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+root@7bb4cdc7834e:/# exit
+exit
+
+░▒▓ ~ ▓▒░ docker container ls -a                                                                                                                                                                                                                                  ░▒▓ ✔  5s  12:57:30 ▓▒░
+CONTAINER ID   IMAGE                COMMAND   CREATED         STATUS                     PORTS     NAMES
+7bb4cdc7834e   debian:stable-slim   "bash"    8 seconds ago   Exited (0) 3 seconds ago             focused_galois
+
+░▒▓ ~ ▓▒░ docker start 7bb4cdc7834e                                                                                                                                                                                                                                   ░▒▓ ✔  12:57:33 ▓▒░
+7bb4cdc7834e
+
+░▒▓ ~ ▓▒░ docker attach 7bb4cdc7834e                                                                                                                                                                                                                                  ░▒▓ ✔  12:57:45 ▓▒░
+root@7bb4cdc7834e:/# cat /etc/debian_version
+12.1
+root@7bb4cdc7834e:/# exit
+exit
+
+░▒▓ ~ ▓▒░                                                                                                                                                                                                                                                         ░▒▓ ✔  8s  12:58:03 ▓▒░
+docker run -it --rm andrius/ascii-patrol
+

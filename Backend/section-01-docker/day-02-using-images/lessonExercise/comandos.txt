@@ -1,0 +1,7 @@
+▒░ docker build -t figtrybe-artify . 
+
+▒░ docker images   
+
+▒░ docker container run figtrybe-artify
+
+▒░ docker container run figtrybe-artify -f Ghost "VQV TRYBE"   
